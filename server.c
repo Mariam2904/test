@@ -45,7 +45,7 @@ int main()
     }
     
     // Listen for incoming connections
-    if (listen(server_socket, 5) == -1) 
+    if (listen(server_socket, MAX_CLIENTS) == -1) 
     {
         printf("Failed to listen for incoming connections\n");
         return -1;
