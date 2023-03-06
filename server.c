@@ -95,7 +95,7 @@ void handle_command(int client_socket, char* command)
     }
     else 
     {
-        char buf[1024];
+        char buf[MAX_COMMAND_SIZE];
         size_t n;
         while ((n = fread(buf, 1, sizeof(buf), fp)) > 0) 
         {
